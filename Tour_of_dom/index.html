@@ -21,6 +21,18 @@
             <li>three</li>
             <li>four</li>
         </ul>
+
+        <section>
+            <h1 id="fruitId">
+                Fruits
+            </h1>
+            <ul>
+                <li class="fav-fruit-name">apple</li>
+                <li class="fav-fruit-name">banana</li>
+                <li class="fav-fruit-name">jack Fruits</li>
+                <li class="fav-fruit-name">Guava</li>
+            </ul>
+        </section>
     </main>
     <script src="js/java.js"></script>
     <script>
@@ -29,13 +41,20 @@
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for (const li of liCollection) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }        
 
         const allHeadings = document.getElementsByTagName('h1');
         for (const h1 of allHeadings) {
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
         }
+
+        const FruitName = document.getElementById('fruitId');
+        // console.log(FruitName);
+
+        const favouriteFruitName = document.getElementsByClassName('fav-fruit-name');
+        console.log(favouriteFruitName);
+        
 
     </script>
 </body>
