@@ -22,7 +22,7 @@
             <li>four</li>
         </ul>
 
-        <section>
+        <section class="fruits-container">
             <h1 id="fruitId">
                 Fruits
             </h1>
@@ -36,8 +36,6 @@
     </main>
     <script src="js/java.js"></script>
     <script>
-        console.log("inside the html file!!!");
-
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for (const li of liCollection) {
@@ -53,9 +51,14 @@
         // console.log(FruitName);
 
         const favouriteFruitName = document.getElementsByClassName('fav-fruit-name');
-        console.log(favouriteFruitName);
+        // console.log(favouriteFruitName);
         
-
+        // Query selector
+        const someLi = document.querySelectorAll('.fruits-container li');
+        for (const li of someLi) {
+            console.log(li.innerText);            
+        }
+        
     </script>
 </body>
 </html>
