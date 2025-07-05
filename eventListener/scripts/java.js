@@ -1,4 +1,4 @@
-function makeYellow(){
+function makeYellow() {
     document.body.style.background = 'yellow';
 }
 
@@ -6,6 +6,6 @@ function makeYellow(){
 
 const btnMakeRed = document.getElementById('btn-make-red');
 // console.log(btnMakeRed);
-btnMakeRed.onclick = function makeRed(){
+btnMakeRed.onclick = function makeRed() {
     document.body.style.background = 'Red';
 }
